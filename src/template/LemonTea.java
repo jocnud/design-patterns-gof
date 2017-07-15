@@ -3,20 +3,13 @@ package template;
 public class LemonTea extends Beverage {
 
 	@Override
-	public void prepareBeverage() {
-		System.out.println(" Start");
-		boilWater();
-		steepTea();
-		pourInACup();
-		addLemon();
-		System.out.println(" Done");
-	}
-
-	private void steepTea() {
-		System.out.println(" Steeping tea");
-	}
-
-	private void addLemon() {
+	public void addCondiments() {
 		System.out.println(" Adding lemon");
+	}
+
+	@Override
+	public void brew() {
+		System.out.println(" Steeping tea");
+
 	}
 }
