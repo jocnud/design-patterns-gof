@@ -2,7 +2,7 @@ package template;
 
 public abstract class Beverage {
 
-	public void prepareBeverage() {
+	public final void prepareBeverage() {
 		System.out.println(" Start");
 		boilWater();
 		brew();
