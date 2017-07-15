@@ -1,7 +1,8 @@
 package template;
 
-public class Coffee {
+public class Coffee extends Beverage {
 
+	@Override
 	public void prepareBeverage() {
 		System.out.println(" Start");
 		boilWater();
@@ -15,16 +16,8 @@ public class Coffee {
 		System.out.println(" Adding milk and sugar");
 	}
 
-	private void pourInACup() {
-		System.out.println(" Pouring into cup");
-	}
-
 	private void brewCoffee() {
 		System.out.println(" Brewing coffee");
-	}
-
-	private void boilWater() {
-		System.out.println(" Boling water");
 	}
 
 }

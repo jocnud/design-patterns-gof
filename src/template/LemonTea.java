@@ -1,7 +1,8 @@
 package template;
 
-public class LemonTea {
+public class LemonTea extends Beverage {
 
+	@Override
 	public void prepareBeverage() {
 		System.out.println(" Start");
 		boilWater();
@@ -11,16 +12,8 @@ public class LemonTea {
 		System.out.println(" Done");
 	}
 
-	private void boilWater() {
-		System.out.println(" Boling water");
-	}
-
 	private void steepTea() {
 		System.out.println(" Steeping tea");
-	}
-
-	private void pourInACup() {
-		System.out.println(" Pouring into cup");
 	}
 
 	private void addLemon() {
